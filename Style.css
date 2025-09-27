@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.video iframe {
+  max-width: 100%;
+}
+
+.beneficios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.beneficios li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.botao {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #e63946;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.botao:hover {
+  background: #c1121f;
+}
+
+footer {
+  background: #222;
+  color: #aaa;
+  padding: 15px;
+  font-size: 14px;
+}
