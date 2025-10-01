@@ -82,20 +82,25 @@
       </ul>
     </section>
 
-    <!-- Preço + CTA + selo -->
-    <div class="flex flex-col md:flex-row md:items-start items-center gap-4 md:gap-6 justify-center md:justify-start mb-6">
-      <p class="text-black text-2xl font-bold text-center md:text-left">
-        Apenas Hoje só 5x de R$ 8,19
-      </p>
-      <a href="https://pay.kiwify.com.br/Fasb3K9" target="_blank" 
-         class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-xl shadow-md transition duration-300 text-center w-fit">
-        Quero meu eBook agora!
-      </a>
-      <div class="text-center md:text-left">
-        <img src="/selo_de_garantia.png" class="max-w-[120px] mx-auto md:mx-0" alt="Selo de Garantia">
-        <p class="text-sm text-gray-600 mt-2">Compra 100% Segura<br>Garantia de Satisfação</p>
-      </div>
+   <!-- Preço + CTA + selo -->
+<div class="flex flex-col items-center md:items-start mb-6">
+  <!-- Preço (linha própria no desktop) -->
+  <p class="text-black text-2xl font-bold text-center md:text-left mb-4">
+    Apenas Hoje só 5x de R$ 8,19
+  </p>
+  
+  <!-- CTA + selo (linha separada no desktop) -->
+  <div class="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
+    <a href="https://pay.kiwify.com.br/Fasb3K9" target="_blank" 
+       class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-xl shadow-md transition duration-300 text-center w-fit">
+      Quero meu eBook agora!
+    </a>
+    <div class="text-center md:text-left">
+      <img src="/selo_de_garantia.png" class="max-w-[120px] mx-auto md:mx-0" alt="Selo de Garantia">
+      <p class="text-sm text-gray-600 mt-2">Compra 100% Segura<br>Garantia de Satisfação</p>
     </div>
+  </div>
+</div>
 
    <!-- Depoimentos (só mobile, no final) -->
 <section class="block md:hidden w-full bg-gray-50 p-4 rounded-xl shadow-sm mt-6">
@@ -140,3 +145,4 @@
     </div>
   </div>
 </section>
+
