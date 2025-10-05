@@ -1,28 +1,141 @@
-<h1 class="text-4xl md:text-5xl font-extrabold text-center leading-tight mb-6 title-glow">
-  Rompa os Contratos da Reencarnação
-</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rompa os Contratos da Reencarnação</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #1a0f1f 0%, #0c0610 100%);
+      color: #f8f8f8;
+      font-family: 'Poppins', sans-serif;
+    }
 
-<style>
-.title-glow {
-  background: linear-gradient(90deg, #f6e27a, #f1c40f, #ffd700, #f6e27a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: pulseGlow 3.5s ease-in-out infinite;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 223, 128, 0.3);
-}
+    /* --- TÍTULO PRINCIPAL COM AURA DOURADA --- */
+    .title-glow {
+      background: linear-gradient(90deg, #f6e27a, #f1c40f, #ffd700, #f6e27a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulseGlow 3.5s ease-in-out infinite;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 223, 128, 0.3);
+    }
 
-@keyframes pulseGlow {
-  0% {
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 16px rgba(255, 223, 128, 0.25);
-    filter: brightness(1);
-  }
-  50% {
-    text-shadow: 0 0 18px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 223, 128, 0.45);
-    filter: brightness(1.25);
-  }
-  100% {
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 16px rgba(255, 223, 128, 0.25);
-    filter: brightness(1);
-  }
-}
-</style>
+    @keyframes pulseGlow {
+      0% {
+        text-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 16px rgba(255, 223, 128, 0.25);
+        filter: brightness(1);
+      }
+      50% {
+        text-shadow: 0 0 18px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 223, 128, 0.45);
+        filter: brightness(1.25);
+      }
+      100% {
+        text-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 16px rgba(255, 223, 128, 0.25);
+        filter: brightness(1);
+      }
+    }
+
+    /* --- FAQ E CARTÕES DE GARANTIA --- */
+    .faq-card, .garantia-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .faq-card:hover, .garantia-card:hover {
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
+      transform: translateY(-3px);
+    }
+
+    .cta-button {
+      background: linear-gradient(90deg, #f6e27a, #f1c40f, #ffd700);
+      color: #1a0f1f;
+      font-weight: bold;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="text-center py-16 px-6 max-w-4xl mx-auto">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-6 title-glow">
+      Rompa os Contratos da Reencarnação
+    </h1>
+
+    <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+      Descubra como romper os contratos da reencarnação e retomar sua consciência plena. 
+      Este eBook exclusivo traz reflexões profundas e práticas para quem busca libertação espiritual e 
+      compreensão além dos véus da realidade.
+    </p>
+
+    <div class="flex flex-col items-center gap-4">
+      <img src="capa-ebook.png" alt="eBook Rompa os Contratos da Reencarnação"
+           class="rounded-xl shadow-lg w-64 sm:w-72 md:w-80 lg:w-96">
+      <p class="text-yellow-300 font-bold text-xl mt-2">Apenas R$ 29,90</p>
+      <a href="https://seulinkdecheckout.com" class="cta-button">Quero meu eBook agora</a>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="py-14 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10 text-yellow-400">O que estão dizendo</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="faq-card p-6">
+        <p class="italic text-gray-200">“Nunca imaginei que ler esse eBook mudaria tanto minha forma de ver a vida.”</p>
+        <p class="text-yellow-300 mt-4 font-semibold">— Ana P.</p>
+      </div>
+      <div class="faq-card p-6">
+        <p class="italic text-gray-200">“Senti uma clareza espiritual que jamais havia experimentado antes.”</p>
+        <p class="text-yellow-300 mt-4 font-semibold">— Carlos M.</p>
+      </div>
+      <div class="faq-card p-6">
+        <p class="italic text-gray-200">“É como se um véu tivesse sido retirado. Leitura profunda e transformadora.”</p>
+        <p class="text-yellow-300 mt-4 font-semibold">— Luiza T.</p>
+      </div>
+    </div>
+
+    <!-- Segundo CTA -->
+    <div class="mt-10">
+      <a href="https://seulinkdecheckout.com" class="cta-button">Quero meu eBook agora</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-14 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-yellow-400 mb-8">Tire suas dúvidas</h2>
+    <div class="space-y-6">
+      <div class="faq-card p-6">
+        <h3 class="text-lg font-semibold mb-2 text-yellow-300">📘 Em quanto tempo recebo o eBook?</h3>
+        <p class="text-gray-300">O acesso é imediato! Assim que o pagamento for aprovado, você receberá o link para download direto no seu e-mail.</p>
+      </div>
+      <div class="faq-card p-6">
+        <h3 class="text-lg font-semibold mb-2 text-yellow-300">🔒 O pagamento é seguro?</h3>
+        <p class="text-gray-300">Sim! Todo o processo é feito através de uma plataforma 100% segura e reconhecida, garantindo sua privacidade e proteção de dados.</p>
+      </div>
+      <div class="faq-card p-6">
+        <h3 class="text-lg font-semibold mb-2 text-yellow-300">💫 Preciso ter conhecimento espiritual prévio?</h3>
+        <p class="text-gray-300">Não. O eBook foi feito para todos os níveis — do iniciante ao avançado — explicando cada conceito de forma clara e prática.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIA -->
+  <section class="py-16 px-6 max-w-3xl mx-auto text-center">
+    <div class="garantia-card p-8">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-4">Garantia de Satisfação</h2>
+      <p class="text-gray-300 mb-6">
+        Você tem 7 dias para ler e sentir a energia do conteúdo. Caso perceba que não é para você, devolvemos seu investimento sem burocracia.
+      </p>
+      <a href="http
