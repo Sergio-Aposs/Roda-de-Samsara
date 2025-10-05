@@ -6,29 +6,31 @@
   <title>Rompa os Contratos da Reencarnação</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      background-color: #0b0414;
-      color: #f1f1f1;
-      font-family: 'Poppins', sans-serif;
-    }
+.title-glow {
+  background: linear-gradient(90deg, #f6e27a, #f1c40f, #ffd700, #f6e27a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulseGlow 3.5s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 223, 128, 0.3);
+}
 
-    /* Animação dourada cintilante do título */
-    .titulo-dourado {
-      background: linear-gradient(90deg, #d4af37, #f6e27a, #d4af37);
-      background-size: 300% 300%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: brilhoSuave 6s ease-in-out infinite;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 16px rgba(255, 223, 128, 0.25);
+    filter: brightness(1);
+  }
+  50% {
+    text-shadow: 0 0 18px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 223, 128, 0.45);
+    filter: brightness(1.25);
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 16px rgba(255, 223, 128, 0.25);
+    filter: brightness(1);
+  }
+}
+</style>
 
-    @keyframes brilhoSuave {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
+  <style>
     /* Botão com efeito */
     .botao-cta {
       background: linear-gradient(90deg, #f6e27a, #d4af37);
@@ -103,7 +105,7 @@
   <div class="mt-10 flex flex-col items-center">
     <img src="selo_de_garantia.png" alt="Selo 7 dias garantia" class="w-24 mb-3">
     <p class="text-sm max-w-md text-gray-300 leading-relaxed">
-      <strong class="text-yellow-400">Leitura sem riscos — Energia Garantida ou seu dinheiro de volta.</strong><br>
+      <strong class="text-white-400">Leitura sem riscos — Energia Garantida ou seu dinheiro de volta.</strong><br>
       Você tem 7 dias para sentir a vibração do conteúdo. Se por qualquer motivo não sentir conexão, devolvemos 100% do valor.
     </p>
   </div>
@@ -182,6 +184,7 @@
 
 </body>
 </html>
+
 
 
 
