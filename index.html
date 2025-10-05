@@ -1,84 +1,230 @@
 <!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Verdade Oculta da Roda de Samsara — Página de Vendas</title>
+  <meta name="description" content="Rompa os contratos da reencarnação e desperte para sua verdadeira consciência. eBook digital, acesso imediato." />
+  <style>
+    :root{
+      --bg:#0b0b10;
+      --card:#0f1116;
+      --muted:#cfc8c0;
+      --gold:#c59a3a;
+      --accent:linear-gradient(90deg, rgba(197,154,58,1) 0%, rgba(255,215,140,1) 100%);
+      --glass: rgba(255,255,255,0.04);
+      --max-width:980px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(ellipse at top left, rgba(20,18,25,0.6), transparent 20%), var(--bg); color:#eee; -webkit-font-smoothing:antialiased;}
+    .container{max-width:var(--max-width);margin:40px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(180deg,#111,#2b2b2b);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.03)}
+    .logo svg{width:36px;height:36px;fill:var(--gold)}
+    h1{font-size:28px;margin:0;line-height:1.05;color:#fff}
+    .subtitle{color:var(--muted);margin-top:8px}
 
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start;margin-top:14px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:16px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+    .hero h2{font-size:34px;margin:0 0 10px 0;color:var(--gold)}
+    .hero p{color:var(--muted);margin:0 0 18px 0}
+    .cta{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--gold);color:#081018;padding:14px 18px;border-radius:12px;border:none;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(197,154,58,0.16)}
+    .btn.secondary{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.06);font-weight:600}
+    .tagline{font-size:13px;color:var(--muted);margin-top:10px}
 
-<div class="guarantee">
-<strong>Garantia 7 dias</strong>
-<div style="margin-top:6px;color:var(--muted);font-size:13px">Se você não sentir conexão com o conteúdo, devolvemos 100% do valor.</div>
-</div>
+    /* VIDEO */
+    .video-wrap{background:var(--card);padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .video{position:relative;padding-bottom:56.25%;height:0;border-radius:8px;overflow:hidden}
+    .video iframe, .video video{position:absolute;left:0;top:0;width:100%;height:100%;border:0}
 
+    /* BENEFITS */
+    .benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+    .benefit{background:var(--glass);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    .benefit h4{margin:0;color:var(--gold);font-size:15px}
+    .benefit p{margin:6px 0 0;color:var(--muted);font-size:14px}
 
-<div style="margin-top:12px;color:var(--muted);font-size:13px">Entrega automática via Kiwify após a confirmação do pagamento.</div>
-</aside>
-</section>
+    /* SIDEBOX */
+    .sidebox{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .price{font-size:22px;font-weight:800;color:#fff}
+    .price small{display:block;font-size:13px;color:var(--muted);font-weight:600}
+    .guarantee{background:rgba(255,255,255,0.02);padding:10px;border-radius:10px;margin-top:12px;color:var(--muted);font-size:13px}
 
+    /* TESTIMONIALS */
+    .testimonials{margin-top:28px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .test{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .test p{margin:0;color:var(--muted);line-height:1.5}
+    .test .author{margin-top:12px;color:var(--gold);font-weight:700}
 
-<section id="offer" class="offer">
-<h3 style="color:var(--gold);margin:0">Acesso Imediato ao eBook Digital</h3>
-<p class="desc">Por apenas <strong>R$ 37,00 à vista</strong> ou <strong>5x de R$ 8,19</strong>, você garante acesso vitalício ao eBook <em>A Verdade Oculta da Roda de Samsara</em>, um guia profundo que vai expandir sua percepção da realidade e te conectar com o verdadeiro propósito da alma.</p>
+    /* OFFER SECTION */
+    .offer{margin-top:28px;padding:22px;border-radius:12px;background:linear-gradient(180deg, rgba(20,18,25,0.6), rgba(15,13,18,0.6));border:1px solid rgba(255,255,255,0.03)}
+    .offer .desc{color:var(--muted);margin-top:8px}
+    .price-block{display:flex;align-items:center;justify-content:space-between;gap:12px}
 
+    /* FAQ */
+    .faq{margin-top:24px}
+    .faq details{background:var(--card);padding:12px;border-radius:10px;margin-top:10px;border:1px solid rgba(255,255,255,0.02)}
+    .faq summary{cursor:pointer;font-weight:700}
 
-<div class="price-block">
-<div>
-<div style="font-size:18px;color:#fff;font-weight:700">Acesso Vitalício</div>
-<div style="color:var(--muted);font-size:13px;margin-top:6px">Pagamento processado pela Kiwify — segurança e liberação imediata.</div>
-</div>
-<div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
-<button class="btn" onclick="buyNow()">Quero meu eBook agora</button>
-<button class="btn secondary" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">Tire minhas dúvidas</button>
-</div>
-</div>
-</section>
+    footer{margin-top:40px;padding:18px 0;color:var(--muted);text-align:center;font-size:13px}
 
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .testimonials{grid-template-columns:1fr}
+      .benefits{grid-template-columns:1fr}
+      .container{padding:18px;margin:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>
+          <!-- simbolo místico -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c1.1 0 2 .9 2 2 0 .6-.3 1.1-.7 1.5C14.8 7.3 17 9.9 17 13c0 3.9-3.1 7-7 7s-7-3.1-7-7c0-3.1 2.2-5.7 5.7-7.5C8.3 5.1 8 4.6 8 4 8 2.9 8.9 2 10 2h2z"/></svg>
+        </div>
+        <div>
+          <h1>A Verdade Oculta da Roda de Samsara</h1>
+          <div class="subtitle">Rompa contratos kármicos e desperte sua verdadeira consciência</div>
+        </div>
+      </div>
+      <div>
+        <button class="btn secondary" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'})">Oferta por tempo limitado</button>
+      </div>
+    </header>
 
-<section id="faq" class="faq">
-<h4 style="color:var(--gold)">Antes de despertar, tire suas dúvidas</h4>
-<details open>
-<summary>É realmente seguro comprar?</summary>
-<div style="margin-top:8px;color:var(--muted)">Sim. O pagamento é processado pela Kiwify, com sistema criptografado e liberação automática do eBook.</div>
-</details>
-<details>
-<summary>Em quanto tempo recebo o eBook?</summary>
-<div style="margin-top:8px;color:var(--muted)">O acesso é liberado automaticamente logo após a confirmação do pagamento. Verifique também sua pasta de spam.</div>
-</details>
-<details>
-<summary>Posso ler em celular ou tablet?</summary>
-<div style="margin-top:8px;color:var(--muted)">Sim, o eBook é compatível com todos os dispositivos e pode ser baixado em PDF ou lido no leitor online da plataforma.</div>
-</details>
-<details>
-<summary>Há algum grupo ou comunidade após a compra?</summary>
-<div style="margin-top:8px;color:var(--muted)">Sim, você será convidado(a) a fazer parte da comunidade de leitores conscientes para compartilhar reflexões e vivências.</div>
-</details>
-</section>
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Rompa os Contratos da Reencarnação e Desperte para Sua Verdadeira Consciência</h2>
+        <p class="tagline">Um guia revelador que mostra os segredos escondidos da Roda de Samsara e ensina como libertar sua alma dos ciclos repetitivos da existência.</p>
 
+        <div class="video-wrap" aria-label="vídeo principal">
+          <div class="video">
+            <!-- Substitua o src abaixo pelo link do seu videoclipe (YouTube embed ou URL do player) -->
+            <img src="mockup-samsara.png" 
+           alt="Capa do eBook A Verdade Oculta da Roda de Samsara"
+celerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p style="margin-top:10px;color:var(--muted)">Leia agora e sinta a energia que envolve este conhecimento. Em poucas páginas, você entenderá por que milhares de pessoas estão despertando para uma nova realidade.</p>
+        </div>
 
-<footer>
-© 2025 — A Verdade Oculta da Roda de Samsara | Todos os direitos reservados.
-<div style="margin-top:8px"><button class="btn secondary" onclick="document.getElementById('mainVideo').scrollIntoView({behavior:'smooth'})">Assista ao videoclipe</button></div>
-</footer>
-</div>
+        <div class="benefits">
+          <div class="benefit"><h4>Rompa padrões cármicos</h4><p>Como identificar e dissolver os ciclos que te prendem à repetição.</p></div>
+          <div class="benefit"><h4>Segredos das vidas passadas</h4><p>Entenda as conexões que seguem de existência em existência.</p></div>
+          <div class="benefit"><h4>Processo energético</h4><p>Técnicas simples para elevar sua frequência e expandir a consciência.</p></div>
+          <div class="benefit"><h4>Propósito revelado</h4><p>Como alinhar suas escolhas com a missão verdadeira da alma.</p></div>
+        </div>
 
+        <div class="testimonials">
+          <div class="test">
+            <p>“Senti como se estivesse lendo algo que eu já sabia, mas havia esquecido. O livro reacendeu minha alma.”</p>
+            <div class="author">— Mariana R., terapeuta holística</div>
+          </div>
+          <div class="test">
+            <p>“Depois da leitura, tive sonhos lúcidos e uma sensação inexplicável de liberdade. É real.”</p>
+            <div class="author">— Sophia Andrade, buscador espiritual</div>
+          </div>
+          <div class="test">
+            <p>“Nunca imaginei que um simples eBook pudesse me fazer entender minha própria existência.”</p>
+            <div class="author">— Luciana Lemos., professora</div>
+          </div>
+          <div class="test">
+            <p>“Cada capítulo é uma chave que abre um portal dentro de nós. Profundo e transformador.”</p>
+            <div class="author">— André T., professor de yoga</div>
+          </div>
+        </div>
 
-<script>
-// Cole o link do checkout da sua plataforma (Kiwify/Hotmart) abaixo
-var checkoutUrl = 'https://pay.kiwify.com.br/Fasb3K9" target=';
+      </div>
 
+      <aside class="sidebox">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+          <div>
+            <div style="font-size:13px;color:var(--muted);font-weight:700">Acesso Imediato</div>
+            <div class="price">R$ 37,00 <small>ou 5x de R$ 8,19</small></div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:12px;color:var(--muted)">Pagamento 100% seguro</div>
+            <div style="margin-top:8px;">
+              <button class="btn" onclick="buyNow()">Quero meu eBook agora</button>
+            </div>
+          </div>
+        </div>
 
-function buyNow(){
-if(!checkoutUrl || checkoutUrl.includes('https://pay.kiwify.com.br/Fasb3K9" target=')){
-// se não configurado, apenas rola até a oferta
-document.getElementById('offer').scrollIntoView({behavior:'smooth'});
-alert('Cole o link do checkout na variável checkoutUrl no código para redirecionamento automático.');
-return;
-}
-window.location.href = checkoutUrl;
-}
+        <div class="guarantee">
+          <strong>Garantia 7 dias</strong>
+          <div style="margin-top:6px;color:var(--muted);font-size:13px">Se você não sentir conexão com o conteúdo, devolvemos 100% do valor.</div>
+        </div>
 
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">Entrega automática via Kiwify após a confirmação do pagamento.</div>
+      </aside>
+    </section>
 
-// Pequeno ajuste: substituir automaticamente o iframe por vídeo responsivo caso o usuário queira autoplay
-(function(){
-var iframe = document.getElementById('mainVideo');
-// Caso queira, o desenvolvedor pode alterar o src aqui usando JS.
-})();
-</script>
+    <section id="offer" class="offer">
+      <h3 style="color:var(--gold);margin:0">Acesso Imediato ao eBook Digital</h3>
+      <p class="desc">Por apenas <strong>R$ 37,00 à vista</strong> ou <strong>5x de R$ 8,19</strong>, você garante acesso vitalício ao eBook <em>A Verdade Oculta da Roda de Samsara</em>, um guia profundo que vai expandir sua percepção da realidade e te conectar com o verdadeiro propósito da alma.</p>
+
+      <div class="price-block">
+        <div>
+          <div style="font-size:18px;color:#fff;font-weight:700">Acesso Vitalício</div>
+          <div style="color:var(--muted);font-size:13px;margin-top:6px">Pagamento processado pela Kiwify — segurança e liberação imediata.</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+          <button class="btn" onclick="buyNow()">Quero meu eBook agora</button>
+          <button class="btn secondary" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">Tire minhas dúvidas</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h4 style="color:var(--gold)">Antes de despertar, tire suas dúvidas</h4>
+      <details open>
+        <summary>É realmente seguro comprar?</summary>
+        <div style="margin-top:8px;color:var(--muted)">Sim. O pagamento é processado pela Kiwify, com sistema criptografado e liberação automática do eBook.</div>
+      </details>
+      <details>
+        <summary>Em quanto tempo recebo o eBook?</summary>
+        <div style="margin-top:8px;color:var(--muted)">O acesso é liberado automaticamente logo após a confirmação do pagamento. Verifique também sua pasta de spam.</div>
+      </details>
+      <details>
+        <summary>Posso ler em celular ou tablet?</summary>
+        <div style="margin-top:8px;color:var(--muted)">Sim, o eBook é compatível com todos os dispositivos e pode ser baixado em PDF ou lido no leitor online da plataforma.</div>
+      </details>
+      <details>
+        <summary>Há algum grupo ou comunidade após a compra?</summary>
+        <div style="margin-top:8px;color:var(--muted)">Sim, você será convidado(a) a fazer parte da comunidade de leitores conscientes para compartilhar reflexões e vivências.</div>
+      </details>
+    </section>
+
+    <footer>
+      © 2025 — A Verdade Oculta da Roda de Samsara | Todos os direitos reservados.
+      <div style="margin-top:8px"><button class="btn secondary" onclick="document.getElementById('mainVideo').scrollIntoView({behavior:'smooth'})">Assista ao videoclipe</button></div>
+    </footer>
+  </div>
+
+  <script>
+    // Cole o link do checkout da sua plataforma (Kiwify/Hotmart) abaixo
+    var checkoutUrl = 'https://pay.kiwify.com.br/Fasb3K9';
+
+    function buyNow(){
+      if(!checkoutUrl || checkoutUrl.includes('https://pay.kiwify.com.br/Fasb3K9')){
+        // se não configurado, apenas rola até a oferta
+        document.getElementById('offer').scrollIntoView({behavior:'smooth'});
+        alert('Cole o link do checkout na variável checkoutUrl no código para redirecionamento automático.');
+        return;
+      }
+      window.location.href = checkoutUrl;
+    }
+
+    // Pequeno ajuste: substituir automaticamente o iframe por vídeo responsivo caso o usuário queira autoplay
+    (function(){
+      var iframe = document.getElementById('mainVideo');
+      // Caso queira, o desenvolvedor pode alterar o src aqui usando JS.
+    })();
+  </script>
 </body>
 </html>
+
