@@ -1,207 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rompa os Contratos da Reencarnação</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Verdade Oculta da Roda de Samsara</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background: radial-gradient(circle at top, #1a0f1f 0%, #0c0610 100%);
-      color: #f8f8f8;
-      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #0e0b14 0%, #1c1427 100%);
+      color: #f1e9d2;
+      font-family: 'Cormorant Garamond', serif;
     }
-
-    /* --- TÍTULO PRINCIPAL COM AURA DOURADA --- */
-    .title-glow {
-      background: linear-gradient(90deg, #f6e27a, #f1c40f, #ffd700, #f6e27a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: pulseGlow 3.5s ease-in-out infinite;
-      text-shadow: 0 0 10px rgba(255, 215, 0, 0.4), 0 0 20px rgba(255, 223, 128, 0.3);
+    h1 {
+      font-size: 2.3rem;
+      text-align: center;
+      color: #f4d784;
+      text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+      animation: pulseGlow 4s ease-in-out infinite;
     }
-
     @keyframes pulseGlow {
-      0% {
-        text-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 16px rgba(255, 223, 128, 0.25);
-        filter: brightness(1);
+      0%, 100% {
+        text-shadow: 0 0 8px rgba(255, 215, 0, 0.25);
+        color: #f4d784;
       }
       50% {
-        text-shadow: 0 0 18px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 223, 128, 0.45);
-        filter: brightness(1.25);
-      }
-      100% {
-        text-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 16px rgba(255, 223, 128, 0.25);
-        filter: brightness(1);
+        text-shadow: 0 0 16px rgba(255, 215, 0, 0.6);
+        color: #ffe9a9;
       }
     }
-
-    /* --- FAQ E CARTÕES DE GARANTIA --- */
-    .faq-card, .garantia-card {
-      background-color: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 215, 0, 0.2);
+    .section-card {
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 1rem;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
-      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+      padding: 2rem;
+      margin: 2rem 0;
     }
-
-    .faq-card:hover, .garantia-card:hover {
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
-      transform: translateY(-3px);
-    }
-
-    .cta-button {
-      background: linear-gradient(90deg, #f6e27a, #f1c40f, #ffd700);
-      color: #1a0f1f;
+    .cta-btn {
+      background: linear-gradient(90deg, #c6a04f, #d4af37);
+      color: #2a1a10;
       font-weight: bold;
       padding: 1rem 2rem;
       border-radius: 9999px;
+      text-align: center;
       transition: all 0.3s ease;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
     }
-
-    .cta-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+    .cta-btn:hover {
+      box-shadow: 0 0 40px rgba(212, 175, 55, 0.5);
+      transform: scale(1.03);
     }
   </style>
 </head>
- 
-<body>
+<body class="flex flex-col items-center px-6">
 
-  <!-- HERO -->
-  <section class="text-center py-16 px-6 max-w-4xl mx-auto">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-6 title-glow">
-      Rompa os Contratos da Reencarnação
-    </h1>
+  <!-- Cabeçalho -->
+  <header class="text-center mt-10">
+    <h1>Rompa os Contratos da Reencarnação</h1>
+    <p class="text-lg text-gray-300 mt-4">Descubra a verdade oculta por trás dos ciclos espirituais e liberte sua consciência.</p>
+  </header>
 
-    <p class="text-gray-300 mb-8 text-lg leading-relaxed">
-      Descubra como romper os contratos da reencarnação e retomar sua consciência plena. 
-      Este eBook exclusivo traz reflexões profundas e práticas para quem busca libertação espiritual e 
-      compreensão além dos véus da realidade.
-    </p>
+  <!-- Mockup -->
+  <section class="mt-10">
+    <img src="mockup-samsara.png" alt="Capa do eBook A Verdade Oculta da Roda de Samsara"
+         class="rounded-xl shadow-lg w-64 sm:w-72 md:w-80 lg:w-96 mx-auto">
+  </section>
 
-    <div class="flex flex-col items-center gap-4">
-      <img src="mockup-samsara.png" alt="eBook Rompa os Contratos da Reencarnação"
-           class="rounded-xl shadow-lg w-64 sm:w-72 md:w-80 lg:w-96">
-      <p class="text-yellow-300 font-bold text-xl mt-2">Apenas R$ 37,00<small> ou 5x de R$ 8,19</small></p>
-      <a href="https://pay.kiwify.com.br/Fasb3K9" class="cta-button">Quero meu eBook agora</a>
-    </div>
-          <aside class="sidebox">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
-          <div>
-    <div class="text-center md:text-left">
-      <img src="/selo_de_garantia.png" class="max-w-[120px] mx-auto md:mx-0" alt="Selo de Garantia">
-      <p class="text-sm text-gray-600 mt-2">Compra 100% Segura<br>Garantia de Satisfação</p>
+  <!-- Benefícios -->
+  <section class="section-card max-w-2xl text-center">
+    <h2 class="text-2xl text-yellow-300 mb-4">O que você vai descobrir</h2>
+    <ul class="space-y-2 text-gray-200">
+      <li>⚜️ A verdade sobre a Roda de Samsara e os contratos espirituais.</li>
+      <li>🌕 Técnicas para dissolver amarras kármicas e libertar sua alma.</li>
+      <li>💫 Como despertar sua consciência e acessar níveis mais altos de percepção.</li>
+      <li>🕯️ Uma jornada profunda de autoconhecimento e reconexão com sua essência divina.</li>
+    </ul>
+  </section>
+
+  <!-- Oferta -->
+  <section class="section-card max-w-2xl text-center">
+    <h2 class="text-2xl text-yellow-300 mb-4">Oferta por Tempo Limitado</h2>
+    <p class="text-3xl font-bold text-yellow-200 mb-2">R$37,00 à vista ou 5x de R$8,19</p>
+    <a href="https://pay.kiwify.com.br/Fasb3K9" target="_blank" class="cta-btn inline-block mb-4">Quero meu eBook agora</a>
+    <div class="flex flex-col items-center">
+      <img src="/selo_de_garantia.png" class="max-w-[100px] mb-2" alt="Selo de Garantia">
+      <p class="text-gray-400 text-sm">Acesso 100% automático após a confirmação da compra.</p>
     </div>
   </section>
 
-  <section class="py-14 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center text-yellow-400 mb-8">Este eBook foi criado para quem sente que há algo além do visível</h2>
-    <div class="space-y-6">
-      <div class="faq-card p-6">
-        <p class="text-gray-300">💫Como identificar e romper os ciclos cármicos que te prendem à repetição.</p>
-         <p class="text-gray-300 mb-6">
-        <p class="text-gray-300">💫O segredo espiritual por trás das vidas passadas e das conexões atuais.</p>
-         <p class="text-gray-300 mb-6">
-        <p class="text-gray-300">💫O processo energético de libertação e expansão de consciência.</p>
-         <p class="text-gray-300 mb-6">
-        <p class="text-gray-300">💫Como elevar sua frequência e atrair novos propósitos.</p>
-         <p class="text-gray-300 mb-6">
-        <p class="text-gray-300">💫Técnicas simples para reencontrar sua essência original.</p>
+  <!-- Depoimentos -->
+  <section class="section-card max-w-3xl text-center">
+    <h2 class="text-2xl text-yellow-300 mb-6">O que dizem sobre o eBook</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="bg-white/5 p-4 rounded-lg shadow-lg">
+        <p>“Senti uma energia intensa durante a leitura. Parecia que cada página falava diretamente à minha alma.”</p>
+        <span class="block text-yellow-300 mt-2 font-semibold">— Juliana R.</span>
       </div>
-     </div>
-    </div>
-         
-
-  <!-- DEPOIMENTOS -->
-  <section class="py-14 px-6 max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-10 text-yellow-400">O que estão dizendo</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="faq-card p-6">
-        <p class="italic text-gray-200">“Nunca imaginei que ler esse eBook mudaria tanto minha forma de ver a vida.”</p>
-        <p class="text-yellow-300 mt-4 font-semibold">— Rafael A., buscador espiritual</p>
+      <div class="bg-white/5 p-4 rounded-lg shadow-lg">
+        <p>“Nunca imaginei que conceitos tão antigos pudessem ser explicados com tanta clareza espiritual.”</p>
+        <span class="block text-yellow-300 mt-2 font-semibold">— Rafael M.</span>
       </div>
-      <div class="faq-card p-6">
-        <p class="italic text-gray-200">“Não imaginaria que um simples eBook pudesse me fazer entender minha própria existência. Senti uma clareza espiritual que jamais havia experimentado antes.”</p>
-        <p class="text-yellow-300 mt-4 font-semibold">— Marina S., terapeuta holística</p>
+      <div class="bg-white/5 p-4 rounded-lg shadow-lg">
+        <p>“Me fez enxergar a vida e a morte de uma maneira completamente diferente. Transformador!”</p>
+        <span class="block text-yellow-300 mt-2 font-semibold">— Elisa C.</span>
       </div>
-      <div class="faq-card p-6">
-        <p class="italic text-gray-200">“É como se um véu tivesse sido retirado. Leitura profunda e transformadora.”</p>
-        <p class="text-yellow-300 mt-4 font-semibold">— Cláudia P., professora</p>
+      <div class="bg-white/5 p-4 rounded-lg shadow-lg">
+        <p>“É mais do que um livro, é uma experiência espiritual que ressoa profundamente.”</p>
+        <span class="block text-yellow-300 mt-2 font-semibold">— Marcos V.</span>
       </div>
-       <div class="faq-card p-6">
-        <p class="italic text-gray-200">“Cada capítulo é uma chave que abre um portal dentro de nós. Profundo e transformador.”</p>
-        <p class="text-yellow-300 mt-4 font-semibold">— Lucas F., estudante de filosofia</p>
-         </div>
     </div>
 
     <!-- Segundo CTA -->
-    <div class="mt-10">
-      <a href="https://pay.kiwify.com.br/Fasb3K9" class="cta-button">Quero meu eBook agora</a>
+    <a href="https://pay.kiwify.com.br/Fasb3K9" target="_blank" class="cta-btn inline-block mt-8">Garantir meu acesso agora</a>
+  </section>
+
+  <!-- Acesso imediato -->
+  <section class="section-card max-w-2xl text-center">
+    <h2 class="text-2xl text-yellow-300 mb-4">Acesso Imediato</h2>
+    <p class="text-gray-300">Assim que a compra for confirmada, você receberá automaticamente o eBook diretamente em seu e-mail, sem demora ou burocracia.</p>
+  </section>
+
+  <!-- Vídeo -->
+  <section class="section-card max-w-3xl text-center">
+    <h2 class="text-2xl text-yellow-300 mb-4">Assista ao Vídeo</h2>
+    <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg">
+      <iframe src="https://www.youtube.com/embed/bngGsZhRsxM?start=1"
+        class="absolute top-0 left-0 w-full h-full rounded-lg"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="py-14 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center text-yellow-400 mb-8">Tire suas dúvidas</h2>
-    <div class="space-y-6">
-      <div class="faq-card p-6">
-        <h3 class="text-lg font-semibold mb-2 text-yellow-300">📘 Em quanto tempo recebo o eBook?</h3>
-        <p class="text-gray-300">O acesso é imediato! Assim que o pagamento for aprovado, você receberá o link para download direto no seu e-mail. Verifique também sua pasta de spam.</p>
-      </div>
-      <div class="faq-card p-6">
-        <h3 class="text-lg font-semibold mb-2 text-yellow-300">🔒 É realmente seguro comprar?</h3>
-        <p class="text-gray-300">Sim. O pagamento é processado pela Kiwify, com sistema criptografado e liberação automática do eBook, garantindo sua privacidade e proteção de dados.</p>
-      </div>
-      <div class="faq-card p-6">
-        <h3 class="text-lg font-semibold mb-2 text-yellow-300">💫 Preciso ter conhecimento espiritual prévio?</h3>
-        <p class="text-gray-300">Não. O eBook foi feito para todos os níveis — do iniciante ao avançado — explicando cada conceito de forma clara e prática.</p>
-      </div>
-       <div class="faq-card p-6">
-        <h3 class="text-lg font-semibold mb-2 text-yellow-300">📘 Posso ler em celular ou tablet?</h3>
-        <p class="text-gray-300">Sim, o eBook é compatível com todos os dispositivos.</p>
-       </div>
+  <section class="section-card max-w-3xl text-center">
+    <h2 class="text-2xl text-yellow-300 mb-6">Tire suas Dúvidas</h2>
+    <div class="space-y-6 text-left">
       <div>
-        <!-- Terceiro CTA -->
-    <div class="mt-10">
-          <a href="https://pay.kiwify.com.br/Fasb3K9" class="cta-button">Quero meu eBook agora</a>     
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
-          </div>
+        <p class="font-semibold text-yellow-200">📘 Como recebo o eBook após a compra?</p>
+        <p class="text-gray-300">Assim que o pagamento for confirmado, o acesso é liberado automaticamente no seu e-mail cadastrado.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-yellow-200">⏳ Em quanto tempo terei acesso?</p>
+        <p class="text-gray-300">O envio é imediato. Em poucos minutos após a confirmação, você já poderá iniciar sua leitura.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-yellow-200">💫 O conteúdo é apenas teórico?</p>
+        <p class="text-gray-300">Não. O eBook inclui reflexões, práticas espirituais e exercícios simples de autoconhecimento.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-yellow-200">🔒 É seguro comprar pela plataforma?</p>
+        <p class="text-gray-300">Sim, a Kiwify é uma plataforma 100% segura, com criptografia e garantia de reembolso.</p>
       </div>
     </div>
-    </section>
+  </section>
 
-  <!-- GARANTIA -->
-  <section class="py-16 px-6 max-w-3xl mx-auto text-center">
-    <div class="garantia-card p-8">
-      <h2 class="text-3xl font-bold text-yellow-400 mb-4">Garantia de Satisfação</h2>
-        <p class="text-gray-300 mb-6">Se você não sentir conexão com o conteúdo, devolvemos 100% do valor.</p>
-        <p class="text-gray-300 mb-6">
-        Você tem 7 dias para ler e sentir a energia do conteúdo. Caso perceba que não é para você, devolvemos seu investimento sem burocracia.
-      </p>
-      <a href="http
-        </div>
-  <Section class="py-16 px-6 max-w-3xl mx-auto text-center">
-  <footer>
-     <div class="rodape">
-      © 2025 — A Verdade Oculta da Roda de Samsara | Todos os direitos reservados.
-       </div>
-       </footer>
-      </section>
+  <footer class="text-gray-500 text-sm text-center py-10">
+    © 2025 A Verdade Oculta da Roda de Samsara. Todos os direitos reservados.
+  </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
