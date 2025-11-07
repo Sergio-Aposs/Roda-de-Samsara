@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roda-de-samsara-wrg6.vercel.app/sitemap.xml
